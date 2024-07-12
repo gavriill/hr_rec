@@ -101,13 +101,9 @@ class Recomedation:
         tmp=self.courses[:].copy()
         for i,row in self.dict_level_position[:].iterrows():
             splt=str(row.profession_role)+'|'+str(row.level)
-            if splt in self.memory.iloc[:, 17: ].columns:
-                logger.warning(f"{splt} - Предраcчитано ранее ==>достаю из памяти  \n")
-                tmp['est']=self.memory[splt]               
-            else: 
-                logger.warning(f" Рассчитваю рекомендации для {splt} \n")
+            logger.warning(f" Рассчитваю рекомендации для {splt} \n")
 
-                tmp['est']=self.get_model_recomendation_by_level_position(row.profession_role,row.level)
+            tmp['est']=self.get_model_recomendation_by_level_position(row.profession_role,row.level)
             res_dict={"type":"career","subjectArea":row.profession_role,"level": row.level, 
                 "courses":tmp.sort_values(by='est',ascending=0)['ID курса'].values[:30].tolist()}
             res_list.append(res_dict)
