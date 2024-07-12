@@ -1,0 +1,7 @@
+-f https://download.pytorch.org/whl/torch_stable.html
+torch==2.2.1+cpu 
+sentence-transformers==2.7.0
+pandas==1.5.3
+openpyxl==3.0.10
+numpy
+requests

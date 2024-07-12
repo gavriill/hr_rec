@@ -1,0 +1,15 @@
+version: '2.1'
+services:
+  recomendation:
+    build:
+      context: .  
+      dockerfile: Dockerfile
+    volumes: 
+      - "./src:/app/src"
+    environment:
+      - URL_COURSES=https://molga.softaria.com/api/learning/ml/course
+      - URL_CONFIGS=https://molga.softaria.com/api/learning/ml/config
+      - URL_POST=https://molga.softaria.com/api/learning/ml/guidance
+
+
+

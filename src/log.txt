@@ -1,0 +1,139 @@
+WARNING:2024-07-12 09:42:11,032 <module> - SCRIPT STARTED
+WARNING:2024-07-12 09:42:11,032 download_data - Загружаю данные о курсах
+WARNING:2024-07-12 09:42:12,179 download_data - ===> Данных о курсах успешно загружены
+INFO:2024-07-12 09:42:12,445 download_configs - Загружаю файлы конфигурации
+WARNING:2024-07-12 09:42:12,658 download_configs - ===> Файлы конфигурации успешно загружены
+INFO:2024-07-12 09:42:12,661 __init__ - Load pretrained SentenceTransformer: src/fine_tuned_model
+WARNING:2024-07-12 09:42:12,900 _load_auto_model - No sentence-transformers model found with name src/fine_tuned_model. Creating a new one with MEAN pooling.
+CRITICAL:2024-07-12 09:42:12,900 <module> - src/fine_tuned_model does not appear to have a file named config.json. Checkout 'https://huggingface.co/src/fine_tuned_model/tree/None' for available files.
+Traceback (most recent call last):
+  File "main.py", line 122, in <module>
+    run_model()
+  File "main.py", line 65, in run_model
+    infernce_model=Recomedation()
+  File "main.py", line 72, in __init__
+    self.model=SentenceTransformer("src/fine_tuned_model")
+  File "/usr/local/lib/python3.8/site-packages/sentence_transformers/SentenceTransformer.py", line 205, in __init__
+    modules = self._load_auto_model(
+  File "/usr/local/lib/python3.8/site-packages/sentence_transformers/SentenceTransformer.py", line 1197, in _load_auto_model
+    transformer_model = Transformer(
+  File "/usr/local/lib/python3.8/site-packages/sentence_transformers/models/Transformer.py", line 35, in __init__
+    config = AutoConfig.from_pretrained(model_name_or_path, **model_args, cache_dir=cache_dir)
+  File "/usr/local/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 965, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/transformers/configuration_utils.py", line 632, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/usr/local/lib/python3.8/site-packages/transformers/utils/hub.py", line 373, in cached_file
+    raise EnvironmentError(
+OSError: src/fine_tuned_model does not appear to have a file named config.json. Checkout 'https://huggingface.co/src/fine_tuned_model/tree/None' for available files.
+WARNING:2024-07-12 09:43:58,332 <module> - SCRIPT STARTED
+WARNING:2024-07-12 09:43:58,332 download_data - Загружаю данные о курсах
+WARNING:2024-07-12 09:44:05,069 download_data - ===> Данных о курсах успешно загружены
+INFO:2024-07-12 09:44:05,333 download_configs - Загружаю файлы конфигурации
+WARNING:2024-07-12 09:44:05,443 download_configs - ===> Файлы конфигурации успешно загружены
+INFO:2024-07-12 09:44:05,447 __init__ - Load pretrained SentenceTransformer: src/fine_tuned_model
+WARNING:2024-07-12 09:44:05,652 _load_auto_model - No sentence-transformers model found with name src/fine_tuned_model. Creating a new one with MEAN pooling.
+CRITICAL:2024-07-12 09:44:05,652 <module> - src/fine_tuned_model does not appear to have a file named config.json. Checkout 'https://huggingface.co/src/fine_tuned_model/tree/None' for available files.
+Traceback (most recent call last):
+  File "main.py", line 122, in <module>
+    run_model()
+  File "main.py", line 65, in run_model
+    infernce_model=Recomedation()
+  File "main.py", line 72, in __init__
+    self.model=SentenceTransformer("src/fine_tuned_model")
+  File "/usr/local/lib/python3.8/site-packages/sentence_transformers/SentenceTransformer.py", line 205, in __init__
+    modules = self._load_auto_model(
+  File "/usr/local/lib/python3.8/site-packages/sentence_transformers/SentenceTransformer.py", line 1197, in _load_auto_model
+    transformer_model = Transformer(
+  File "/usr/local/lib/python3.8/site-packages/sentence_transformers/models/Transformer.py", line 35, in __init__
+    config = AutoConfig.from_pretrained(model_name_or_path, **model_args, cache_dir=cache_dir)
+  File "/usr/local/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 965, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/transformers/configuration_utils.py", line 632, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/usr/local/lib/python3.8/site-packages/transformers/utils/hub.py", line 373, in cached_file
+    raise EnvironmentError(
+OSError: src/fine_tuned_model does not appear to have a file named config.json. Checkout 'https://huggingface.co/src/fine_tuned_model/tree/None' for available files.
+WARNING:2024-07-12 09:45:20,271 <module> - SCRIPT STARTED
+WARNING:2024-07-12 09:45:20,271 download_data - Загружаю данные о курсах
+WARNING:2024-07-12 09:45:21,330 download_data - ===> Данных о курсах успешно загружены
+INFO:2024-07-12 09:45:21,723 download_configs - Загружаю файлы конфигурации
+WARNING:2024-07-12 09:45:21,973 download_configs - ===> Файлы конфигурации успешно загружены
+INFO:2024-07-12 09:45:21,976 __init__ - Load pretrained SentenceTransformer: src/fine_tuned_model
+INFO:2024-07-12 09:45:22,409 __init__ - Use pytorch device_name: cpu
+WARNING:2024-07-12 09:45:23,394 get_model_recomendation_all - consultingSapHcm|3 - Предраcчитано ранее ==>достаю из памяти  
+
+CRITICAL:2024-07-12 09:45:23,396 <module> - 'ID курса'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'ID курса'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 122, in <module>
+    run_model()
+  File "main.py", line 66, in run_model
+    post_data(infernce_model.get_model_recomendation_all())
+  File "main.py", line 113, in get_model_recomendation_all
+    "courses":tmp.sort_values(by='est',ascending=0)['ID курса'].values[:30].tolist()}
+  File "/usr/local/lib/python3.8/site-packages/pandas/core/frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/usr/local/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'ID курса'
+WARNING:2024-07-12 10:02:47,380 <module> - SCRIPT STARTED
+WARNING:2024-07-12 10:02:47,380 download_data - Загружаю данные о курсах
+WARNING:2024-07-12 10:02:48,350 download_data - ===> Данных о курсах успешно загружены
+INFO:2024-07-12 10:02:48,577 download_configs - Загружаю файлы конфигурации
+WARNING:2024-07-12 10:02:48,690 download_configs - ===> Файлы конфигурации успешно загружены
+INFO:2024-07-12 10:02:48,693 __init__ - Load pretrained SentenceTransformer: src/fine_tuned_model
+INFO:2024-07-12 10:02:49,095 __init__ - Use pytorch device_name: cpu
+WARNING:2024-07-12 10:02:50,049 get_model_recomendation_all - consultingSapHcm|3 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,050 get_model_recomendation_all - consultingSapHcm|2 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,052 get_model_recomendation_all - consultingSapHcm|1 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,053 get_model_recomendation_all - consultingSapHcm|0 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,054 get_model_recomendation_all - devBackend|3 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,055 get_model_recomendation_all - devBackend|2 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,056 get_model_recomendation_all - devBackend|1 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,057 get_model_recomendation_all - devBackend|0 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,058 get_model_recomendation_all - devFrontend|3 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,059 get_model_recomendation_all - devFrontend|2 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,060 get_model_recomendation_all - devFrontend|1 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,061 get_model_recomendation_all - devFrontend|0 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,062 get_model_recomendation_all - projectManagement|1 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,063 get_model_recomendation_all - projectManagement|0 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,064 get_model_recomendation_all - hr|1 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,065 get_model_recomendation_all - hr|0 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,066 get_model_recomendation_all - productManagement|0 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,067 get_model_recomendation_all - productManagement|1 - Предраcчитано ранее ==>достаю из памяти  
+
+WARNING:2024-07-12 10:02:50,068 get_model_recomendation_all - [{'type': 'career', 'subjectArea': 'consultingSapHcm', 'level': 3, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}, {'type': 'career', 'subjectArea': 'consultingSapHcm', 'level': 2, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}, {'type': 'career', 'subjectArea': 'consultingSapHcm', 'level': 1, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}, {'type': 'career', 'subjectArea': 'consultingSapHcm', 'level': 0, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}, {'type': 'career', 'subjectArea': 'devBackend', 'level': 3, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}, {'type': 'career', 'subjectArea': 'devBackend', 'level': 2, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}, {'type': 'career', 'subjectArea': 'devBackend', 'level': 1, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}, {'type': 'career', 'subjectArea': 'devBackend', 'level': 0, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}, {'type': 'career', 'subjectArea': 'devFrontend', 'level': 3, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}, {'type': 'career', 'subjectArea': 'devFrontend', 'level': 2, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}, {'type': 'career', 'subjectArea': 'devFrontend', 'level': 1, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}, {'type': 'career', 'subjectArea': 'devFrontend', 'level': 0, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}, {'type': 'career', 'subjectArea': 'projectManagement', 'level': 1, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}, {'type': 'career', 'subjectArea': 'projectManagement', 'level': 0, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}, {'type': 'career', 'subjectArea': 'hr', 'level': 1, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}, {'type': 'career', 'subjectArea': 'hr', 'level': 0, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}, {'type': 'career', 'subjectArea': 'productManagement', 'level': 0, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}, {'type': 'career', 'subjectArea': 'productManagement', 'level': 1, 'courses': ['000353', '001352', '001244', '000838', '001122', '000900', '000320', '000274', '000529', '001444', '001307', '001465', '000009', '000186', '000001', '000836', '000440', '001480', '001417', '001474', '000182', '000405', '000304', '000208', '001235', '000616', '001069', '001271', '000979', '000689']}]
+WARNING:2024-07-12 10:02:50,298 post_data - ===> Данных о рекомендация загружены на портал
+WARNING:2024-07-12 10:02:50,376 <module> - SCRIPT FINISHED SUCCESSFULLY
